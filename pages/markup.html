@@ -1,0 +1,13 @@
+---
+trala: true
+---
+
+<h1>A simple page</h1>
+
+<p>Can't be simpler than that {{ site.examples | size }}</p>
+
+<ul>
+{% for page in site.pages %}
+  <li>{{ page.url }}</li>
+{% endfor %}
+</ul>
